@@ -9,7 +9,7 @@ document.getElementById("urlForm").addEventListener("submit", async function (ev
 
     try {
         // Send the long URL to the backend API
-        const response = await fetch('http://localhost:3000/shorten', {
+        const response = await fetch('https://url-shortener-backend-uevc.onrender.com/shorten', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ longUrl }),
